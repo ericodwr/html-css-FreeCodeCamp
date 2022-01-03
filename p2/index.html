@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">
+        Survey Form
+      </h1>
+      <p id="description">
+        <em>Thank you for taking the time to help us improve the platform</em>
+      </p>
+    </header>
+    <form action="" id="survey-form">
+      <div class="form-content">
+        <label for="name-label">Name</label>
+        <input type="text" name="name" id="name-label" placeholder="name" required>
+      </div>
+      <div class="form-content">
+        <label for="email-label">Email</label>
+        <input type="email" email="email" id="email-label" placeholder="Enter your email" required>
+      </div>
+      <div class="form-content">
+        <label for="number-label">Age</label>
+        <input type="number" name="age" id="number-label" placeholder="Age" required max="40" min="20">
+      </div>
+      <div class="radio form-content">
+        <p>Questions</p>
+        <input type="radio" value="1" name="input" id="1">
+        <label for="1">Options 1</label> <br>
+        <input type="radio" value="2" name="input" id="2">
+        <label for="2">Options 2</label> <br>
+        <input type="radio" name="input" id="3" value="3">
+        <label for="3">Options 3</label>
+      </div>
+
+      <div class="select form-content">
+        <p>Select one</p>
+        <select name="select" id="dropdown">
+          <option value="1">Select 1</option>
+          <option value="2">Select 2</option>
+          <option value="3">Select 3</option>
+          <option value="4">Select 4</option>
+          <option value="5">Select 5</option>
+        </select>
+      </div>
+
+      <div class="checkbox form-content">
+        <p>Check the checkbox</p>
+        <input type="checkbox" name="c1" id="c1" value="check1">
+        <label for="c1">Check 1</label> <br>
+        <input type="checkbox" name="c2" id="c2" value="check2">
+        <label for="c2">Check 2</label> <br>
+        <input type="checkbox" name="c3" id="c3" value="check3">
+        <label for="c3">Check 3</label> <br>
+        <input type="checkbox" name="c4" id="c4" value="check4">
+        <label for="c4">Check 4<label>
+        </div>
+
+      <div class="comment form-content">
+        <p>Any comments?</p>
+        <textarea name="text" id="text" cols="30" rows="5" placeholder="Enter your comment here"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
